@@ -1,13 +1,18 @@
 <?php 
-if ( isset( $_POST["botton"] ) && isset($_FILES ["attachment"]) ) {
 
-    $from_email= 'sender@abc.com';
-    $recipient_email='kingkthegreatperiod@gmail.com';
 
-    $sender_name=$_POST["sender_name"];
-    $reply_to_email= $_POST["sender_email"];
-    $subject=$_POST["sender_subject"];
-    $message=$_POST["message"];
+$from_email= 'MyrtYurt@gmail.com';
+$recipient_email='kingkthegreatperiod@gmail.com';
+
+
+$sender_name=$_POST["sender_name"];
+$reply_to_email= $_POST["sender_email"];
+$subject=$_POST["sender_subject"];
+$message=$_POST["message"];
+
+if ( isset( $_POST["button"] ) && isset($_FILES ["attachment"]) ) {
+
+   
 
     if(strlen($sender_name)< 1){
         die("name is too short or doesn't exist");
