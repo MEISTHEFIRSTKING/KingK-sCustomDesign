@@ -1,6 +1,5 @@
 <?php 
 
-
 $from_email= 'MyrtYurt@gmail.com';
 $recipient_email='kingkthegreatperiod@gmail.com';
 
@@ -80,3 +79,135 @@ if ( isset( $_POST["button"] ) && isset($_FILES ["attachment"]) ) {
 
 }
 ?>
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Html form</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="fashion.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald&family=Oxygen:wght@300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+
+
+  <div class="nav">
+
+
+    <ul>
+      <center>
+        <li><a href="index.html">Back to Homepage</a></li>
+
+        <li><a href="Game.html">Game Stuff</a></li>
+      </center>
+    </ul>
+
+
+  </div>
+
+  <script src="script.js"></script>
+  <div class="images">
+    <img class="rack"
+      src="https://images.squarespace-cdn.com/content/v1/5b9c8fb3c258b42748351a07/1594493752583-38ZW9S80BR6DZYKQQFGU/Fast+fashion%2C+nina+gbor%2C+secondhand+clothing+to+africa?format=1000w"
+      height=600 width=600>
+    <center>
+      <div class="f1">
+        <h1 class="F">F</h1>
+      </div>
+    </center>
+
+    <div class="f">
+      <h1 class="A1">A</h1>
+    </div>
+
+
+    <div class="f">
+      <h1 class="S">S</h1>
+    </div>
+
+
+    <div class="f">
+      <h1 class="H">H</h1>
+    </div>
+
+    <div class="f">
+      <h1 class="I">I</h1>
+    </div>
+
+
+    <div class="f">
+      <h1 class="O">O</h1>
+    </div>
+
+
+    <div class="f">
+      <h1 class="N">N</h1>
+    </div>
+
+    <img class="shoes" src="https://cdn.mos.cms.futurecdn.net/H3SSyTL6wvJqLWHPqV7DPm.jpg" height=600 width=600>
+  </div>
+
+
+  <!-- <center>
+    <p>Upload a file for a custom Garment
+      .</p>
+  </center>
+
+
+
+
+  <center>
+    <form action="fashion.php" method="post" enctype="multipart/form-data">
+      <input type="file" name="fileToUpload" id="fileToUpload">
+      <input type="submit" value="Upload" name="submit">
+    </form>
+    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  </center> -->
+
+
+  <form enctype="multipart/form-data" method="POST" action = "fashion.php">
+    <div class= "input-group" >
+             <input class= "form-control" type="text" name="sender_name" placeholder="Your Name" required/>
+    </div>
+    <div class= "input-group" >
+             <input class= "form-control" type="email" name="sender_email" placeholder="Your email" required/>
+    </div>
+    <div class= "input-group" >
+             <input class= "form-control" type="text" name="sender_subject" placeholder="Subject" />
+    </div>
+    <div class= "input-group" >
+             <textarea  rows = "4" cols="50" class= "form-control"  name="message" placeholder="Message"></textarea>
+    </div>
+    <div class= "input-group" >
+             <input class= "form-control btn-secondary" type="file" name="attachment" placeholder="attach file" />
+    </div>
+    <div class= "input-group" >
+             <input class= "btn-primary" type="submit" name="button" placeholder="Submit"  />
+    </div>
+
+</form>
+
+
+</body>
+
+</html>
+
+
+
